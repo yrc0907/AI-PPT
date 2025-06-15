@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI 生成 PPT 项目 README
+文档持续更新😄
+## 项目背景与初衷
 
-## Getting Started
+🤔 **为什么开发这个项目？**
 
-First, run the development server:
+学校水课作业要求制作 PPT，自己动手耗时费力，而外包平台收费高昂（动辄几十到数百元），学生群体难以负担，说的没错，说的就是我这种穷逼😭，本项目致力于为学生提供**低价、高质的 AI 生成 PPT 服务**，支持自选模型与模板，用技术简化作业流程，让 PPT 制作更高效、更经济！
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 核心功能特性
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🚀 基础功能
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **自选模型与模板**：支持选择不同 AI 模型（如 GPT-4、Stable Diffusion 等），匹配教育、汇报、答辩等多场景模板。
+* **AI 内容生成**：输入主题即可自动生成 PPT 文案、逻辑框架及配图建议。
+* **自定义编辑**：支持调整文字、配色、布局等元素，满足个性化需求。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🍋 高级特色功能
 
-## Learn More
+| 功能模块 | 核心优势 |
+| :--- | :--- |
+| 实时 AI 流生成 | 边输入需求边生成幻灯片，实时预览效果，告别等待加载。 |
+| 代码库突出显示 | 自动识别代码内容并高亮排版，适合技术类 PPT（如编程作业、项目展示）。 |
+| 多种支付渠道，以及按量计费模式 | 支持支付宝，微信，国内外银行卡支付，学生可以根据自己的钱包能力选择价格低廉的模型。 |
+| 演示模板商店 | 内置海量免费 / 付费模板（含极简、扁平、学术等风格），支持一键套用。 |
+| 拖放式生成器 | 可视化操作界面，拖拽元素即可快速组合幻灯片，零设计基础也能上手。 |
+| 创意 AI 图像生成 | 基于 DALL・E/Stable Diffusion 生成原创插图、数据可视化图表，告别版权风险。 |
+| 实时流式传输 | 通过 Vercel 部署，支持多人同时编辑与预览，协作制作更高效。 |
 
-To learn more about Next.js, take a look at the following resources:
+## 技术栈说明
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 核心框架
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Next.js + React**：构建全栈应用，支持服务器端渲染与实时交互。
+* **tRPC**：类型安全的 API 通信，保障前后端数据交互稳定性。
+* **Shadcn/ui**：基于 Tailwind CSS 的可复用 UI 组件，实现响应式设计。
 
-## Deploy on Vercel
+### AI 与流媒体
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **多AI集成**：集成 GPT等 模型生成文案，DALL・E 生成图像。
+* **Vercel Streaming**：实现幻灯片实时生成与流式预览。
+* **CodeMirror**：支持代码高亮与格式化，优化技术内容展示。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 支付与存储
+
+* **LemonSqueezy/支付宝/微信**：集成支付系统与模板商店，支持订阅与按次付费。
+* **Supabase**：数据库存储用户项目、模板与生成记录。
+
+## 快速使用指南
+
+### 1\. 选择模板与模型
+
+* 进入模板商店，筛选「教育」「学术」等分类，或上传自定义模板；
+* 选择 AI 模型（如「GPT-4 高效文案」「Midjourney 高清配图」）。
+
+### 2\. 输入需求
+
+* 填写 PPT 主题（如「大学生物实验报告」「Python 课程作业」）；
+* 补充关键要点（如章节标题、数据图表需求），AI 自动生成内容框架。
+
+### 3\. 实时生成与编辑
+
+* 开启「实时流模式」，边输入边生成幻灯片；
+* 拖放调整页面顺序，修改文字、颜色、字体等元素。
+
+### 4\. 导出与分享
+
+* 支持 PDF/PPTX 格式导出，适配教室投影与在线提交；
+* 生成分享链接，支持朋友 / 同学实时查看预览。
+
+## 价格优势对比
+
+| 服务类型 | 传统外包平台 | 本项目 |
+| :--- | :--- | :--- |
+| 基础 PPT（10 页） | 50-100 元 | 5-15 元（学生特惠） |
+| 定制化需求 | 100-300 元 | 20-50 元 |
+| 修改次数 | 2-3 次免费，超出收费 | 无限次免费修改 |
+| 版权归属 | 平台保留部分权利 | 完全归属用户 |
+
+## 项目反馈
+
+📧 **反馈渠道**：
+
+---
+
+发邮箱至rongcaiyu124@gamil.com，欢迎给位提交pr，我一个人做确实要半个月才能做完
+
+**让 AI 搞定水课 PPT，把时间留给更有意义的事！**
+
+✨ **项目开源地址**：[https://github.com/your-repo/ai-ppt-project](https://github.com/your-repo/ai-ppt-project)
