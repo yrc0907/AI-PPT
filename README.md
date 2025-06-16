@@ -1,5 +1,5 @@
 # AI 生成 PPT 项目 README
-文档持续更新😄
+文档与项目持续更新😄
 ## 项目背景与初衷
 
 🤔 **为什么开发这个项目？**
@@ -86,4 +86,4 @@
 
 **让 AI 搞定水课 PPT，把时间留给更有意义的事！**
 
-✨ **项目开源地址**：[https://github.com/your-repo/ai-ppt-project](https://github.com/your-repo/ai-ppt-project)
+
